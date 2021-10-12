@@ -12,21 +12,26 @@
     Name:- Uzair Ahmed
            Izhar Ahmed
            Fuzail Ahmed
-## Table of Contents
+## App information
 
 * Colorcode:- 
       
-       https://colorhunt.co/palette/22577a38a3a557cc9980ed99
+        1. #22577A
+        2. #38A3A5
+        3. #57CC99
+        4. #80ED99
 
-* Fontfamily:-
+* Fontfamily:- 
+
+        Arial, Helvetica Neue, Helvetica, sans-serif
 
 * Fontsize:-
 
         Headings:-
              H1: 32PX
-             H2:
-             H3:
-             H4:
+             H2: 24px
+             H3: 20px
+             H4: 16px
 
          Paragraph:-
              p: 14px
