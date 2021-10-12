@@ -14,17 +14,17 @@
             Fuzail Ahmed
 ## Table of Contents
 
-*Colorcode:- https://colorhunt.co/palette/22577a38a3a557cc9980ed99
+* Colorcode:- https://colorhunt.co/palette/22577a38a3a557cc9980ed99
 
-*Fontfamily:-
+* Fontfamily:-
 
-*Fontsize:-
-        *Headings:-
-            *H1: 32PX
-            *H2:
-            *H3:
-            *H4:
+* Fontsize:-
+        * Headings:-
+            * H1: 32PX
+            * H2:
+            * H3:
+            * H4:
 
-        *Paragraph:-
-            *p: 14px
+        * Paragraph:-
+            * p: 14px
 
