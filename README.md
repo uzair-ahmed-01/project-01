@@ -34,5 +34,5 @@
              H4: 16px
 
          Paragraph:-
-             p: 14px
+              P: 14px
 
