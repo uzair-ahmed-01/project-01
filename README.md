@@ -5,13 +5,20 @@
 | Work in progress |
 
 ## About App
-    This web base app is design to used for student admission managment.
-    By using this app we easily manage student records.
-    
+* This web base app is design to used for student admission managment.
+* Using this app we easily manage student records.
+   
+## What We Learn
+
+* Authentication
+* Autherization
+* CRUD operation
+
 ## Contributer
-    Name:- Uzair Ahmed
-           Izhar Ahmed
-           Fuzail Ahmed
+* Uzair Ahmed
+* Izhar Ahmed
+* Fuzail Ahmed
+
 ## App information
 
 * Colorcode:- 
