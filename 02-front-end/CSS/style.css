@@ -1,8 +1,19 @@
 *{
     font-family:Arial, Helvetica, sans-serif;
-    p:14px;
-}
+    margin: 0;
+    padding: 0;
 
+   }
+
+   body{
+       line-height: 1;
+       color: black;
+       background-color: #57CC99;
+   }
+h1,h2,h3,h4,h5,h6{
+    line-height: 1;
+    margin: 20px 0 10px 0;
+}
 .c1{
     color:#22577A;
 }
@@ -16,3 +27,26 @@
     color:#80ED99;
 }
 
+.center{
+    text-align: center;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+.btn{
+  background-color: whitesmoke; 
+  border-radius: 8px;
+  border-width:0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  vertical-align: baseline;
+}
