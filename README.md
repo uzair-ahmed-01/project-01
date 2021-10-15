@@ -30,7 +30,7 @@
 
 * Fontfamily:- 
 
-        Arial, Helvetica Neue, Helvetica, sans-serif
+        'Noto Sans Mono', monospace
 
 * Fontsize:-
 
