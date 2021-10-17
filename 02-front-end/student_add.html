@@ -11,10 +11,10 @@
     </head>
  
     <body>  
-        <div class="container">
+        <div class="container center">
 
             <!----------- col2 ----------->
-            <div class="col2 center">
+            <div class="col2">
                 <ul>
                     <li><a href="#">Dashboard</a></li><hr>
                     <li><a href="#">Student</a></li><hr>
@@ -23,7 +23,7 @@
             </div>
             
             <!----------- Student Admission Form ----------->
-            <div class="col8 center">
+            <div class="col8">
                 <form>
                     <h1>Student Admission Form</h1>  
                     <h3>Student Registration</h3> 
@@ -71,13 +71,48 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>City</td>
+                            <td>
+                                <select>
+                                <option>Ahmednagar</option>
+                                <option>Pune</option>
+                                <option>Mumbai</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>Pin Code</td>
                             <td><input id="pin" type="text" placeholder="" name="pin" required ></td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>Course</td>
+                            <td>
+                                <input type="checkbox" placeholder="" name="course" required >BA
+                                <input type="checkbox" placeholder="" name="course" required >BCS
+                                <input type="checkbox" placeholder="" name="course" required >BCA
+                                <input type="checkbox" placeholder="" name="course" required >MCA
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Photo</td>
+                            <td><input type="file" placeholder="" name="file" required ></td>
+                        </tr>
+                        <tr>
+                            <td>Year</td>
+                            <td>
+                                <select>
+                                <option>1st</option>
+                                <option>2nd</option>
+                                <option>3rd</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td><input class="btn" type="submit" value="Submit"></td>
                         </tr>
+                        
                     </table>
                 </form>
             </div>
