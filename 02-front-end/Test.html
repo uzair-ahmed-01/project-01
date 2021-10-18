@@ -10,30 +10,45 @@
     <title>Document</title>
   </head>
  
-    <body>
-          <div class="center">
-                <h1 class="center">Welcome Web</h1>
-                <p class="center">Almost before we knew it, we had left the ground.</p>
+  <body>
+        <!----------- Testing area ----------->
+        <div class="center">
+            <h1 class="center">Welcome Web</h1>
+            <p class="center">Almost before we knew it, we had left the ground.</p>
+            <button class="btn">Button</button>
+        </div>
+        <!----------- Main container started ----------->
+        <div class="container">
 
+          <!----------- col2 ----------->
+          <div class="col2 row center">
           
-                <button class="btn">Button</button>
-          </div>
-          <div class="container bg-color3">
-         
-          <div class="column menu">
             <ul>
-              <li><a href="#">The Flight</a></li>
-              <li><a href="#">The City</a></li>
-              <li><a href="#">The Island</a></li>
-              <li><a href="#">The Food</a></li>
+              <li><a href="#">Dashboard</a></li><hr>
+              <li><a href="#">Student</a></li><hr>
+              <li><a href="#">Logout</a></li>
             </ul>
-            </div>
-
-          <div class="column content"></div>
-         
-          <div class="footer">
-              <p>Footer Text</p>
+          
           </div>
-     
-    </body>
+        
+          <!----------- Content ----------->
+          <div class="col8 row center">
+            <form>
+              
+              <h1>Sign In</h1>  
+              <p><input id="text" type="text" placeholder="Username" name="text" required ></p>  
+              <p></p><input id="pass" type="password" placeholder="Password" name="pass" required ></p>
+              <p><input class="btn" type="submit" value="Login"></p>
+              <p>forgot password?<a href="#">&nbsp;Signin</a></p>
+              
+            </form>
+          </div>
+         
+          <!----------- Footer Start ----------->
+          <div class="footer bg-color2">
+              <a href="">About App</a>
+          </div>
+        </div>
+        <!----------- Main container end ----------->
+  </body>
 </html>
