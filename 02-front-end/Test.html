@@ -1,54 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;500&display=swap" rel="stylesheet">
-    <title>Document</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;500&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
  
-  <body>
-        <!----------- Testing area ----------->
-        <div class="center">
-            <h1 class="center">Welcome Web</h1>
-            <p class="center">Almost before we knew it, we had left the ground.</p>
-            <button class="btn">Button</button>
-        </div>
-        <!----------- Main container started ----------->
-        <div class="container">
+    <body>  
+      <div class="container center">
 
-          <!----------- col2 ----------->
-          <div class="col2 row center">
-          
+        <!----------- col2 ----------->
+        <div class="col2">
             <ul>
-              <li><a href="#">Dashboard</a></li><hr>
-              <li><a href="#">Student</a></li><hr>
-              <li><a href="#">Logout</a></li>
-            </ul>
-          
-          </div>
-        
-          <!----------- Content ----------->
-          <div class="col8 row center">
-            <form>
-              
-              <h1>Sign In</h1>  
-              <p><input id="text" type="text" placeholder="Username" name="text" required ></p>  
-              <p></p><input id="pass" type="password" placeholder="Password" name="pass" required ></p>
-              <p><input class="btn" type="submit" value="Login"></p>
-              <p>forgot password?<a href="#">&nbsp;Signin</a></p>
-              
-            </form>
-          </div>
-         
-          <!----------- Footer Start ----------->
-          <div class="footer bg-color2">
-              <a href="">About App</a>
-          </div>
+                <li><a href="#">Dashboard</a></li><hr>
+                <li><a href="#">Student</a></li><hr>
+                <li><a href="#">Logout</a></li>
+            </ul>          
         </div>
-        <!----------- Main container end ----------->
-  </body>
+          
+        <!----------- Student Admission Form ----------->
+        <div class="col8">
+            <div class="form">
+              <form>
+                <h1>Student Admission Form</h1>  
+                <h3>Student Registration</h3> 
+
+                <table class="tablecontrol">
+                    <tr>
+                        <td>First Name</td>
+                        <td><input id="fname" type="text" placeholder="" name="fname" required ></td>
+                        </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input id="lname" type="text" placeholder="" name="lname" required ></td>
+                    </tr>  
+                    <tr>
+                        <td>Email</td>
+                        <td><input id="email" type="email" placeholder="user@email.com" name="email" required ></td>
+                    </tr>  
+                    <tr>
+                        <td>Mobile</td>
+                        <td><input id="mobile" type="number" placeholder="+91" name="mobile" required ></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="Gender"> Male
+                            <input type="radio" name="Gender"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DOB</td>
+                        <td><input id="date" type="date" placeholder="" name="date" required ></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td>
+                            <select>
+                            <option>India</option>
+                            <option>Saudi</option>
+                            <option>Dubai</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>
+                            <select>
+                            <option>Ahmednagar</option>
+                            <option>Pune</option>
+                            <option>Mumbai</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pin Code</td>
+                        <td><input id="pin" type="text" placeholder="" name="pin" required ></td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td>Course</td>
+                        <td>
+                            <input type="checkbox" placeholder="" name="course" required >BA
+                            <input type="checkbox" placeholder="" name="course" required >BCS
+                            <input type="checkbox" placeholder="" name="course" required >BCA
+                            <input type="checkbox" placeholder="" name="course" required >MCA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Photo</td>
+                        <td><input type="file" placeholder="" name="file" required ></td>
+                    </tr>
+                    <tr>
+                        <td>Year</td>
+                        <td>
+                            <select>
+                            <option>1st</option>
+                            <option>2nd</option>
+                            <option>3rd</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="btn" type="submit" value="Submit"></td>
+                    </tr>
+                    
+                </table>
+              </form>
+            </div>
+        </div>
+          
+        <!----------- Footer Start ----------->
+        <div class="footer bg-color2">
+          <a href="">About App</a>
+        </div> 
+      </div>
+    </body>
 </html>

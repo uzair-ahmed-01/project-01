@@ -11,110 +11,116 @@
     </head>
  
     <body>  
-        <div class="container center">
-
-            <!----------- col2 ----------->
+        <div class="container">
             <div class="col2">
-                <ul>
-                    <li><a href="#">Dashboard</a></li><hr>
-                    <li><a href="#">Student</a></li><hr>
-                    <li><a href="#">Logout</a></li>
-                </ul>          
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Dashboard</a></li><hr>
+                        <li><a href="#">Student</a></li><hr>
+                        <li><a href="#">Logout</a></li>
+                    </ul> 
+                </div>     
             </div>
             
-            <!----------- Student Admission Form ----------->
             <div class="col8">
-                <form>
-                    <h1>Student Admission Form</h1>  
-                    <h3>Student Registration</h3> 
+                    <div class="content">
+                        <form>
+                            <h1>Student Admission Form</h1>  
+                            <h3>Student Registration</h3> 
+                            
+                            <div class="form-item">
+                                <div class="item-title">First Name</div>
+                                <div class="item"><input id="fname" type="text" placeholder="" name="fname" required ></div>
+                            </div>
 
-                    <table class="tablecontrol">
-                        <tr>
-                            <td>First Name</td>
-                            <td><input id="fname" type="text" placeholder="" name="fname" required ></td>
-                            </tr>
-                        <tr>
-                            <td>Last Name</td>
-                            <td><input id="lname" type="text" placeholder="" name="lname" required ></td>
-                        </tr>  
-                        <tr>
-                            <td>Email</td>
-                            <td><input id="email" type="email" placeholder="user@email.com" name="email" required ></td>
-                        </tr>  
-                        <tr>
-                            <td>Mobile</td>
-                            <td><input id="mobile" type="number" placeholder="+91" name="mobile" required ></td>
-                        </tr>
-                        <tr>
-                            <td>Gender</td>
-                            <td>
-                                <input type="radio" name="Gender"> Male
-                                <input type="radio" name="Gender"> Female
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DOB</td>
-                            <td><input id="date" type="date" placeholder="" name="date" required ></td>
-                        </tr>
-                        <tr>
-                            <td>Address</td>
-                            <td><textarea></textarea></td>
-                        </tr>
-                        <tr>
-                            <td>Country</td>
-                            <td>
-                                <select>
-                                <option>India</option>
-                                <option>Saudi</option>
-                                <option>Dubai</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>City</td>
-                            <td>
-                                <select>
-                                <option>Ahmednagar</option>
-                                <option>Pune</option>
-                                <option>Mumbai</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Pin Code</td>
-                            <td><input id="pin" type="text" placeholder="" name="pin" required ></td>
-                        </tr>
-                        <tr>
-                        <tr>
-                            <td>Course</td>
-                            <td>
-                                <input type="checkbox" placeholder="" name="course" required >BA
-                                <input type="checkbox" placeholder="" name="course" required >BCS
-                                <input type="checkbox" placeholder="" name="course" required >BCA
-                                <input type="checkbox" placeholder="" name="course" required >MCA
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Photo</td>
-                            <td><input type="file" placeholder="" name="file" required ></td>
-                        </tr>
-                        <tr>
-                            <td>Year</td>
-                            <td>
-                                <select>
-                                <option>1st</option>
-                                <option>2nd</option>
-                                <option>3rd</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input class="btn" type="submit" value="Submit"></td>
-                        </tr>
-                        
-                    </table>
-                </form>
+                            <table class="tablecontrol">
+                                <tr>
+                                    <td>First Name</td>
+                                    <td><input id="fname" type="text" placeholder="" name="fname" required ></td>
+                                    </tr>
+                                <tr>
+                                    <td>Last Name</td>
+                                    <td><input id="lname" type="text" placeholder="" name="lname" required ></td>
+                                </tr>  
+                                <tr>
+                                    <td>Email</td>
+                                    <td><input id="email" type="email" placeholder="user@email.com" name="email" required ></td>
+                                </tr>  
+                                <tr>
+                                    <td>Mobile</td>
+                                    <td><input id="mobile" type="number" placeholder="+91" name="mobile" required ></td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>
+                                        <input type="radio" name="Gender"> Male
+                                        <input type="radio" name="Gender"> Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DOB</td>
+                                    <td><input id="date" type="date" placeholder="" name="date" required ></td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td><textarea></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>
+                                        <select>
+                                        <option>India</option>
+                                        <option>Saudi</option>
+                                        <option>Dubai</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td>
+                                        <select>
+                                        <option>Ahmednagar</option>
+                                        <option>Pune</option>
+                                        <option>Mumbai</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pin Code</td>
+                                    <td><input id="pin" type="text" placeholder="" name="pin" required ></td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <td>Course</td>
+                                    <td>
+                                        <input type="checkbox" placeholder="" name="course" required >BA
+                                        <input type="checkbox" placeholder="" name="course" required >BCS
+                                        <input type="checkbox" placeholder="" name="course" required >BCA
+                                        <input type="checkbox" placeholder="" name="course" required >MCA
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Photo</td>
+                                    <td><input type="file" placeholder="" name="file" required ></td>
+                                </tr>
+                                <tr>
+                                    <td>Year</td>
+                                    <td>
+                                        <select>
+                                        <option>1st</option>
+                                        <option>2nd</option>
+                                        <option>3rd</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input class="btn" type="submit" value="Submit"></td>
+                                </tr>
+                                
+                            </table>
+                        </form>
+                    </div>
             </div>
             <!----------- Footer Start ----------->
             <div class="footer bg-color2">

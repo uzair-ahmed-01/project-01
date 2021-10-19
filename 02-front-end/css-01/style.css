@@ -37,8 +37,24 @@ h1 {
     background-color: #57cc99;
 }
 .bg-color4 {
-    background-color: #80ed99;
+    background-color: #7e9e85;
 }
+
+/*----------- Card design -----------*/
+
+.card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.4);
+    box-sizing:border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+
 
 /*----------- Align Items in Center -----------*/
 .center {
@@ -48,12 +64,13 @@ h1 {
 /*----------- Menu ul, li, a -----------*/
 a{
     text-decoration: none;
+    color: white;
 }
 
 .col2, ul {
     list-style-type: none;
     margin:0;
-    padding: 5px 0 0 0 ;
+    padding: 0;
 }
 
 .col2 li a {
@@ -71,11 +88,21 @@ a{
 }
 
 /*----------- Form input field -----------*/
-input, textarea, select {
+input, textarea{
     width: 240px;
     background-color: #ecf0f1;
     border: 2px solid transparent;
-    border-radius: 3px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 9px 5px;
+    transition: border 0.5s;
+    text-align: left;
+}
+select{
+    width: auto;
+    background-color: #ecf0f1;
+    border: 2px solid transparent;
+    border-radius: 5px;
     font-size: 14px;
     padding: 9px 5px;
     transition: border 0.5s;
@@ -120,7 +147,7 @@ tr{
 
 /*----------- Footer -----------*/
 .footer {
-    height: auto;
+    height: auto;   
     clear: both !important;
     padding: 25px;
 }
@@ -176,8 +203,9 @@ tr{
     width: 640px;
     float: left;
     height: 100vh;
-    padding: 5px 0 0 0 ;
-    background-color: #80ed99;
+    background:#80ed99;
+    overflow-y: scroll;
+    padding-bottom: 20px;
 }
 .col9{
     width: 720px;
@@ -187,7 +215,21 @@ tr{
     width: 800px;
     float: left;
     margin:auto;
-    background-color: #80ed99;
+    background: #80ed99;
     height: 100vh;
 }
 /* End of Grid systeme*/
+
+.content {
+    padding: 30px;
+}
+.form-item::after, .form-item::before {
+    clear: both;
+}
+.form-item .item-title {
+    float: left;
+}
+.form-item .item {
+    float: left;
+    padding-left: 20px;
+}
