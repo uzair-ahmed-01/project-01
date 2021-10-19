@@ -1,0 +1,235 @@
+body {
+    font-family: "Noto Sans Mono", monospace;
+    font-weight: 300; 
+}
+
+/*----------- Begin Common classes -----------*/
+
+/*Headings*/
+h1 {
+    font-size: 32px;
+    font-family: fantasy;
+    font-weight: normal !important;
+}
+
+/*----------- Text Colors Properties----------- */
+.color1 {
+    color: #22577a;
+}
+.color2 {
+    color: #38a3a5;
+}
+.color3 {
+    color: #57cc99;
+}
+.color4 {
+    color: #80ed99;
+}
+
+/*----------- Background Colors Properties -----------*/
+.bg-color1 {
+    background-color: #22577a;
+}
+.bg-color2 {
+    background-color: #38a3a5;
+}
+.bg-color3 {
+    background-color: #57cc99;
+}
+.bg-color4 {
+    background-color: #7e9e85;
+}
+
+/*----------- Card design -----------*/
+
+.card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.4);
+    box-sizing:border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+
+
+/*----------- Align Items in Center -----------*/
+.center {
+    text-align: center;
+}
+
+/*----------- Menu ul, li, a -----------*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.col2, ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+.col2 li a {
+    border-radius: 8px;
+    padding: 8px;
+    margin: 15px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.col2 li:hover {
+    background-color: #38a3a5;
+}
+
+/*----------- Form input field -----------*/
+input, textarea{
+    width: 240px;
+    background-color: #ecf0f1;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 9px 5px;
+    transition: border 0.5s;
+    text-align: left;
+}
+select{
+    width: auto;
+    background-color: #ecf0f1;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 9px 5px;
+    transition: border 0.5s;
+    text-align: left;
+}
+
+input[type=radio]{
+    width:auto!important;
+}
+input[type=checkbox]{
+    width:20px;
+}
+
+/*----------- Table control -----------*/
+td{
+    text-align: left;
+}
+
+tr{
+    align-items: center;
+}
+
+/*----------- Start button style -----------*/
+.btn {
+    width: auto;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    border-width: 0;
+    color: #3498db;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 350 !important;
+    line-height: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    vertical-align: baseline;
+    font-family: "Noto Sans Mono", monospace;
+    font-weight: 300;
+}
+/*----------- End Common classes -----------*/
+
+/*----------- Footer -----------*/
+.footer {
+    height: auto;   
+    clear: both !important;
+    padding: 25px;
+}
+.footer a{
+    color: white;
+    
+}
+
+/*----------- Grid System -----------*/
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+   
+}
+
+.row::before, .row::after{
+  clear: both;
+}
+
+.col1{
+    width: 80px;
+    float: left;
+}
+.col2{
+    width: 160px;
+    float: left;
+    height: 100vh;
+    background-color: #22577a;
+
+}
+.col3{
+    width: 240px;
+    float: left;
+}
+.col4{
+    width: 320px;
+    float: left;
+}
+.col5{
+    width: 400px;
+    float: left;
+}
+.col6{
+    width: 480px;
+    float: left;
+}
+.col7{
+    width: 560px;
+    float: left;
+}
+.col8{
+    width: 640px;
+    float: left;
+    height: 100vh;
+    background:#80ed99;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+.col9{
+    width: 720px;
+    float: left;
+}
+.col10{
+    width: 800px;
+    float: left;
+    margin:auto;
+    background: #80ed99;
+    height: 100vh;
+}
+/* End of Grid systeme*/
+
+.content {
+    padding: 30px;
+}
+.form-item::after, .form-item::before {
+    clear: both;
+}
+.form-item .item-title {
+    float: left;
+}
+.form-item .item {
+    float: left;
+    padding-left: 20px;
+}
