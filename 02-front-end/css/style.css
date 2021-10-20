@@ -164,7 +164,7 @@ tr{
    
 }
 
-.row::before, .row::after{
+.row::after, .row::before{
   clear: both;
 }
 
