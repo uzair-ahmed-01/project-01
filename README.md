@@ -3,6 +3,14 @@
 * This web base app is design to used for student admission managment.
 * Using this app we easily manage student records.
 
+# Published Website
+
+* Go to Website https://uzair-ahmed-01.github.io/project-01/
+
+# Architecture Diagram
+
+![plot](./docs/Architecture/Architeecture.png)
+
 ## About App
 
 * Authentication
@@ -39,4 +47,3 @@
 
          Paragraph:-
               P: 14px
-
