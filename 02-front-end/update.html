@@ -15,21 +15,30 @@
 
             <!----------- col2 ----------->
             <div class="col2">
-                <ul>
-                    <li><a href="#">Dashboard</a></li><hr>
-                    <li><a href="#">Student</a></li><hr>
-                    <li><a href="#">Logout</a></li>
-                </ul>          
+                <div class="menu">
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li><hr>
+                        <li><a href="#">Student</a>
+                            <ul>
+                                <li><a href="student_list.html">List</a></li>
+                                
+                                <li><a href="student_add.html">Add</a></li>
+                                </ul>
+                        </li><hr>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul> 
+                </div>             
             </div>
             
             <!----------- Student Admission Form ----------->
             <div class="col8">
-                
+                <div class="content">
                     <form>
+                        
                         <h1>Student Admission Form</h1>  
                         <h3>Student Registration</h3> 
-
-                        <table class="tablecontrol">
+                        
+                        <table>
                             <tr>
                                 <td>First Name</td>
                                 <td><input id="fname" type="text" placeholder="" name="fname" required ></td>
@@ -115,7 +124,9 @@
                             </tr>
                             
                         </table>
+                        
                     </form>
+                </div>
                 
             </div>
             <!----------- Footer Start ----------->

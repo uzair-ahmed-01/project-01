@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;500&display=swap" rel="stylesheet">
+        <title>Student Addmission</title>
+    </head>
+ 
+    <body>  
+        <div class="container">
+            <div class="col2">
+                <div class="menu">
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li><hr>
+                        <li><a href="#">Student</a>
+                            <ul>
+                                <li><a href="student_list.html">List</a></li>
+                                
+                                <li><a href="student_add.html">Add</a></li>
+                                </ul>
+                        </li><hr>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul> 
+                </div>             
+            </div>
+            
+            <div class="col8">
+                    <div class="content">
+                        <form action="student_list.html">
+                            <h1>Student Admission Form</h1>  
+                            <h3>Student Registration</h3> 
+                        
+                            <div class="form-item">
+                                <div class="item-title">First Name</div>
+                                <div class="item"><input id="fname" type="text" placeholder="" name="fname" value="Uzair Ahmed" required /></div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">Last Name</div>
+                                <div class="item"> <input id="lname" type="text" placeholder="" name="lname" value="Ansari" required /></div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">Email</div>
+                                <div class="item"> <input id="email" type="email" placeholder="user@gmail.com" name="email" value="uzair@gmail.com" required /></div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">Mobile</div>
+                                <div class="item"> <input id="mobile" type="text" placeholder="+91" name="Mobile" value="+918237482917" required /></div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title" for="male">Gender</div>
+                                <div class="item"> 
+                                    <input id="male" type="radio" name="Gender" checked> Male
+                                    <input id="female" type="radio" name="Gender"> Female
+                                </div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">DOB</div>
+                                <div class="item"><input id="date" type="date" placeholder="" name="date" value="2002-01-01"
+                                    min="1990-01-01" max="2021-12-31" ></div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">Address</div>
+                                <div class="item"> <textarea id="textarea" name="textarea">Home No: 14 Hafiz Zahoor Colony Near AL-Haram Tailor, Alamgir Nagar, Ahmednagar.</textarea></div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">Country</div>
+                                <div class="item">
+                                    <select>
+                                    <option>India</option>
+                                    <option>Saudi</option>
+                                    <option>Dubai</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">City</div>
+                                <div class="item">
+                                    <select>
+                                        <option>Ahmednagar</option>
+                                        <option>Pune</option>
+                                        <option>Mumbai</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">Pin Code</div>
+                                <div class="item"><input id="pin" type="text" placeholder="" id="pin" name="pin" value="414002" required ></div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">Course</div>
+                                <div class="item"> 
+                                    <input type="checkbox" placeholder="" id="ba" name="course">BA
+                                    <input type="checkbox" placeholder="" id="bca" name="course" checked>BCA
+                                    <input type="checkbox" placeholder="" id="ma" name="course">MCA
+                                    <input type="checkbox" placeholder="" id="bcs" name="course">BCS
+                                </div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">Photo</div>
+                                <div class="item">
+                                    <img src="image/profile.jpg" width="100px" >
+                                </div>
+                                <div class="item-title"> &nbsp;</div>
+                                <div class="item">
+                                    <input type="file" placeholder="" name="file" >
+                                </div>
+                            </div>
+                            <div class="form-item"> 
+                                <div class="item-title">Year</div>
+                                <div class="item">
+                                    <select>
+                                        <option>1st</option>
+                                        <option>2nd</option>
+                                        <option selected>3rd</option>
+                                    </select>
+                                </div>
+                            </div>  
+                            <div class="button"><button type="submit" id="submit_btn" name="submit_btn" class="btn"  >Submit</button>&nbsp;&nbsp;<a class="btn" href="student_list.html">Cancle</a></div>
+                            </div>
+                        </form>
+            </div>
+            <!----------- Footer Start ----------->
+            <div class="footer bg-color2">
+                <a href="">About App</a>
+            </div>
+        </div>
+    </body>
+</html>

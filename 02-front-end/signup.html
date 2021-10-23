@@ -11,28 +11,33 @@
   <body>
     <div class="container center">
       <div class="col10">
-        <div class="card">
-          <form>
-            <h1>Sign up</h1>  
-            <p>
-              <input id="fname" type="text" placeholder="First Name" name="fname" required >
-            </p>  
-            <p>
-              <input id="lname" type="text" placeholder="First Name" name="lname" required >
-            </p>  
-            <p>
-              <input id="email" type="email" placeholder="Email" name="email" required >
-            </p>  
-            <p>
-              <input id="pass" type="password" placeholder="Password" name="pass" required >
-            </p>
-            <p>
-              <input id="pass" type="password" placeholder="Confirm Password" name="pass" required >
-            </p>
-            <p>
-              <input class="btn" type="submit" value="Sign up">
-            </p>
-          </form>
+        <div class="content">
+          <div class="card">
+            <form action="message.html">
+              <h1>Sign up</h1>  
+              <div class="form_field">
+                <input id="first_name" type="text" placeholder="First Name" name="first_name" required >
+              </div>  
+              <div class="form_field">
+                <input id="last_name" type="text" placeholder="First Name" name="last_name" required >
+              </div>  
+              <div class="form_field">
+                <input id="email" type="email" placeholder="Email" name="email" required >
+              </div>  
+              <div class="form_field">
+                <input id="password" type="password" placeholder="Password" name="password" required >
+              </div>
+              <div class="form_field">
+                <input id="confirm_password" type="password" placeholder="Confirm Password" name="confirm_password" required >
+              </div>
+              <div class="form_field">
+                <button type="submit" id="submit_btn" name="submit_btn" class="btn"  >Signup</button>
+              </div>
+              <div class="form_field">
+                Return to login?<a href="index.html">&nbsp;<b>Signin</b></a>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>  

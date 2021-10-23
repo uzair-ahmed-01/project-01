@@ -14,24 +14,30 @@
         <div class="container center">
             <!----------- Signin ----------->
             <div class="col10">
-                <div class="card">
-                    <form>
-                
-                        <h1>Sign In</h1>  
-                        <p>
-                            <input type="text" placeholder="Username" name="text" required >
-                        </p>  
-                        <p>
-                            <input type="password" placeholder="Password" name="pass" required >
-                        </p>
-                        <p>
-                            <input class="btn" type="submit" value="Login">
-                        </p>
-                        <p>
-                            forgot password?<a href="#">&nbsp;<b>Signin</b></a>
-                        </p>
-                
-                    </form>
+                 <div class="content">
+                    <div class="card">
+                        <form>
+                    
+                            <h1>Sign In</h1>  
+                            <div class="form_field">
+                                <input type="text" placeholder="Username" name="text" required >
+                            </div>  
+                            <div class="form_field">
+                                <input type="password" placeholder="Password" name="pass" required >
+                            </div>
+                            <div style="padding-left:135px;font-size: small;">
+                                <a href="forgot-password.html">forgot password?</a>
+                            </div>
+                            <div class="form_field">
+                                <buuton class="btn" onclick="window.location.href='dashboard.html'">Login</buuton>
+                            </div>
+                            
+                            <div class="form_field">
+                                <b>Create new account?</b>&nbsp;<a href="signup.html"><b>Signup</b></a>
+                            </div>
+                    
+                        </form>
+                    </div>
                 </div>
             </div> 
         </div>

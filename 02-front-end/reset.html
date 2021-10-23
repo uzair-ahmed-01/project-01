@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Reset Password</title>
   </head>
   <body>
     <div class="container center">
       <div class="col10">
-        <div class="card">
-          <form>
-            <h1>Reset Password</h1>
-            <p>
-              <input id="pass" type="password" placeholder="Password" name="pass" required >
-            </p>
-            <p>
-              <input id="pass" type="password" placeholder="Confirm Password" name="pass" required >
-            </p>
-            <p>
-              <input class="btn" type="submit" value="Submit">
-            </p>
-            <p>
-              Return to login?<a href="#">&nbsp;Signin</a>
-            </p>
-          </form>
+        <div class="content">
+          <div class="card">
+            <form action="reset.html">
+              <h1>Reset Password</h1>
+              <div class="form_field">
+                <input name="password" id="password" type="password" placeholder="Password" required />
+              </div>
+              <div class="form_field">
+                <input name="confirm_password" id="confirm_password" type="password" placeholder="Confirm Password" required />
+              </div>
+              <div class="form_field">
+                <button class="btn" name="submit_btn" id="submit_btn" type="submit">Submit</button>
+              </div>
+              <div class="form_field">
+                Return to login?<a href="index.html">&nbsp;<b>Signin</b></a>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

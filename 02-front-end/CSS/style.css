@@ -3,12 +3,12 @@ body {
     font-weight: 300; 
 }
 
-/*----------- Begin Common classes -----------*/
+/*<<<<<<<<<<<<<<- Begin Common classes ->>>>>>>>>>>>>>*/
 
-/*Headings*/
+/*----------- Headings -----------*/
 h1 {
     font-size: 32px;
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: normal !important;
 }
 
@@ -41,7 +41,6 @@ h1 {
 }
 
 /*----------- Card design -----------*/
-
 .card {
     position: relative;
     top: 50%;
@@ -58,7 +57,8 @@ h1 {
 
 /*----------- Align Items in Center -----------*/
 .center {
-    text-align: center;
+    text-align: center !important;
+    padding: 20px;
 }
 
 /*----------- Menu ul, li, a -----------*/
@@ -67,13 +67,13 @@ a{
     color: white;
 }
 
-.col2, ul {
+.menu ul {
     list-style-type: none;
-    margin:0;
+    margin:0 auto;
     padding: 0;
 }
 
-.col2 li a {
+.menu li a {
     border-radius: 8px;
     padding: 8px;
     margin: 15px;
@@ -83,21 +83,62 @@ a{
     display: inline-block;
 }
 
-.col2 li:hover {
+/*----------- Nested ul, li, a -----------*/
+.menu li:hover {
+    background-color: #38a3a5;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+}
+
+.menu ul li {
+    position: relative;
+}
+.menu ul ul{
+    display:none ;
+    top: 0;
+    position: absolute;
+    background: #22577a;
+    width: 100px;
+    right: -101px;
+
+    }
+
+.menu ul ul li a {
+    padding: 4px;
+    margin: 8px 15px;
+    color: white;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.menu ul li:hover {
     background-color: #38a3a5;
 }
 
 /*----------- Form input field -----------*/
-input, textarea{
+input{
     width: 240px;
     background-color: #ecf0f1;
     border: 2px solid transparent;
     border-radius: 5px;
     font-size: 14px;
     padding: 9px 5px;
-    transition: border 0.5s;
-    text-align: left;
 }
+
+textarea{
+    width: 240px;
+    height: 100px;
+    background-color: #ecf0f1;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 9px 5px;
+}
+
 select{
     width: auto;
     background-color: #ecf0f1;
@@ -109,20 +150,22 @@ select{
     text-align: left;
 }
 
+.button{
+    padding: 25px;
+    text-align: center;
+    font-weight: 300;
+}
+
 input[type=radio]{
     width:auto!important;
 }
+
+input[type=date]{
+    width:auto!important;
+}
+
 input[type=checkbox]{
     width:20px;
-}
-
-/*----------- Table control -----------*/
-td{
-    text-align: left;
-}
-
-tr{
-    align-items: center;
 }
 
 /*----------- Start button style -----------*/
@@ -141,31 +184,21 @@ tr{
     text-align: center;
     vertical-align: baseline;
     font-family: "Noto Sans Mono", monospace;
-    font-weight: 300;
 }
-/*----------- End Common classes -----------*/
 
-/*----------- Footer -----------*/
-.footer {
-    height: auto;   
-    clear: both !important;
-    padding: 25px;
-}
-.footer a{
-    color: white;
-    
-}
+/*<<<<<<<<<< End Common classes >>>>>>>>>>>*/
 
 /*----------- Grid System -----------*/
-
 .container {
     width: 800px;
     margin: 0 auto;
    
 }
 
-.row::before, .row::after{
+.row::after, .row::before{
   clear: both;
+  display: block;
+  content: " ";
 }
 
 .col1{
@@ -175,9 +208,6 @@ tr{
 .col2{
     width: 160px;
     float: left;
-    height: 100vh;
-    background-color: #22577a;
-
 }
 .col3{
     width: 240px;
@@ -202,10 +232,7 @@ tr{
 .col8{
     width: 640px;
     float: left;
-    height: 100vh;
-    background:#80ed99;
-    overflow-y: scroll;
-    padding-bottom: 20px;
+    
 }
 .col9{
     width: 720px;
@@ -214,22 +241,122 @@ tr{
 .col10{
     width: 800px;
     float: left;
-    margin:auto;
-    background: #80ed99;
-    height: 100vh;
 }
+
 /* End of Grid systeme*/
 
-.content {
-    padding: 30px;
+/*----------- Menu And Content Layout -----------*/
+.menu{
+    height: 100vh;
+    background-color: #22577a;
+    text-align: center;
+    padding: 30px 0;
 }
-.form-item::after, .form-item::before {
+
+.content {
+    background-color:#80ed99;
+    height: calc(100vh - 60px);
+    overflow-y:auto;
+    padding: 30px;
+
+}
+
+.form-item {
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.form-item:after, .form-item:before {
+    content: " ";
+    display: block;
     clear: both;
 }
 .form-item .item-title {
     float: left;
+    line-height: 45px;
+    width: 140px;
+    font-weight: 500;
 }
+
 .form-item .item {
-    float: left;
-    padding-left: 20px;
+    text-align: left;
+    line-height: 40px;
 }
+
+/*----------- All login, signup, forgot etc pages field -------------*/
+.form_field{
+    padding: 8px;
+}
+
+/*----------- Footer -----------*/
+.footer {
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+
+}
+.footer a{
+    color: white;
+}
+
+/*----------- Table Dashboard -----------*/
+.table{
+    position: relative;
+    top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    border-collapse: collapse;
+}
+
+.table th{
+    border: 2px solid black;
+    padding: 12px;
+}
+
+.table td{
+    border: 2px solid black;
+    text-align: center;
+    padding: 35px;
+}
+
+/*----------- Table control -----------*/
+
+table, th, td{
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: 700;
+}
+table {
+    width: auto;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+td{
+    height: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+  td a{
+      font-weight: 400;
+  }
+
+  /*----------- For Veiw page -----------*/
+.form-item .view-title {
+    float: left;
+    line-height: 45px;
+    width: 25%;
+    font-weight: 500;
+    padding-left: 25%;
+    text-align: left;
+}
+.address-box{
+      width:280px;
+      height: auto;
+      float: left;
+  }
