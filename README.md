@@ -9,7 +9,7 @@
 
 # Architecture Diagram
 
-![plot](./docs/Architecture/Architeecture.png)
+![docs](/docs/Architecture/Architecture.png)
 
 ## About App
 
