@@ -26,13 +26,12 @@
 
 * Colorcode:- 
 
-        Sr      Name           Hex Code
-        -------------------------------
-        1. Prussian Blue       #22577A 
-        2. Pigment Green       #38A3A5
-        3. Navy Blue           #57CC99
-        4. Medium Blue         #80ED99
-
+        1. Beige - #C7BEA2
+        2. Light beige - #E5DCC3
+        3. Grey - #9A9483
+        4. Light grey - #AAA492
+        5. Color reference: https://colorhunt.co/palette/e5dcc3c7bea2aaa4929a9483
+           
 * Fontfamily:- 
 
         'Noto Sans Mono', monospace
