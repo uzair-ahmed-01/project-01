@@ -11,6 +11,10 @@
 
 ![docs](/docs/Architecture/Architecture.png)
 
+# Class Diagram
+
+![docs](/docs/Class Daigram/Class Daigram Image.png)
+
 ## About App
 
 * Authentication
