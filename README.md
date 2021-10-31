@@ -9,11 +9,11 @@
 
 # Architecture Diagram
 
-![docs](/docs/Architecture/Architecture.png)
+![docs](/docs/architecture/architecture.png "Project01 Architecture Diagram")
 
 # Class Diagram
 
-![docs](/docs/Class Daigram/Class Daigram Image.png)
+![docs](/docs/class-diagram/project01-class-diagram.png "Project01 Class Diagram")
 
 ## About App
 
